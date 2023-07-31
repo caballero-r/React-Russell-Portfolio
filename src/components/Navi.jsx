@@ -8,16 +8,16 @@ function Navigation () {
     return (
         <ul className='nav justify-content-end'>  
             <li className='nav-item'>
-                <a className='nav-link active' href='#'>About Me</a>
+                <a className='nav-link active' href='#aboutMe'>About Me</a>
             </li>
             <li className='nav-item'>
-                <a className='nav-link' href='#'>Projects</a>
+                <a className='nav-link ' href='#project'>Projects</a>
             </li>
             <li className='nav-item'>
-                <a className='nav-link' href='#'>Contact</a>
+                <a className='nav-link ' href='#contact'>Contact</a>
             </li>
             <li className='nav-item'>
-                <a className='nav-link' href='#'>Resume</a>
+                <a className='nav-link ' href='#Resume'>Resume</a>
             </li>
         </ul>
     );
