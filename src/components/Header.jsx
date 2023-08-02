@@ -9,7 +9,7 @@ import Navi from './Navi';
         <div className='container-fluid text-center header'>
             <div className='row'>
                 <div className='col profile'>
-                    <h1>Russell Caballero</h1>
+                    <h1>Russell Caballero's Dev Portfolio</h1>
                 </div>
                 <div className='col'>
                     <Navi />

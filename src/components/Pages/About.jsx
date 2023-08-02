@@ -8,7 +8,7 @@ function About () {
             <h1>Welcome to my dev portfolio!</h1>
             <div className='row align-items-center'>
                 <div className='col'>
-                    <img src="./profile.jpg" className='img-fluid rounded' alt="" />
+                    <img src="./profile.jpg" className='img-fluid rounded-5' alt="" />
                 </div>
                 <div className='col'>
                     <h2>About Me</h2>
