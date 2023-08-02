@@ -1,17 +1,36 @@
 // Import Required
 import React from 'react';
+import { useState } from 'react';
+import Navi from './Navi';
 import About from './Pages/About';
 import Project from './Pages/Project';
 import Contact from './Pages/Contact';
 
 // Content component
 function Content () {
-    return (
-        <div className='container-fluid text-center content'>
-            <About />
-            <Project />
-            <Contact /> 
 
+    // Page Display
+    const [currentPage, setCurrentPage] = useState('About');
+
+    const renderPage = () => {
+        if (currentPage === 'About') {
+            return <About />;
+        }
+        if (currentPage === 'Project') {
+            return <Project />;
+        }
+        if (currentPage === 'Contact') {
+            return <Contact />;
+        }
+    }
+
+    // Page Change
+    const handlePageChange = (page) => setCurrentPage(page);
+
+    return (
+        <div>
+            <Navi currentPage={currentPage} handlePageChange={handlePageChange} />
+            {renderPage()}
         </div>
     )
 }
