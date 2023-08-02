@@ -5,6 +5,7 @@ import Navi from './Navi';
 import About from './Pages/About';
 import Project from './Pages/Project';
 import Contact from './Pages/Contact';
+import Resume from './Pages/Resume';
 
 // Content component
 function Content () {
@@ -22,6 +23,10 @@ function Content () {
         if (currentPage === 'Contact') {
             return <Contact />;
         }
+        if (currentPage === 'Resume') {
+            return <Resume />;
+        }
+
     }
 
     // Page Change
